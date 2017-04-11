@@ -1,0 +1,7 @@
+{
+    "dependencies": {
+        "github.com/ziutek/rrd": {
+            "branch": "master"
+        }
+    }
+}

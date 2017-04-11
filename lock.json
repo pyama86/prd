@@ -1,0 +1,13 @@
+{
+    "memo": "",
+    "projects": [
+        {
+            "name": "github.com/ziutek/rrd",
+            "branch": "master",
+            "revision": "86f4f09e7abbf4bfb3912da6c041cabba4e933bc",
+            "packages": [
+                "."
+            ]
+        }
+    ]
+}
