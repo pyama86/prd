@@ -96,12 +96,14 @@ func (cli *CLI) Run(args []string) int {
 				}
 			}
 		}
-		results = append(results, Result{
-			Name: r.Filename,
-			Max:  max,
-			Min:  min,
-			Avg:  math.Floor(avgv / avgc),
-		})
+		if max > 0 {
+			results = append(results, Result{
+				Name: r.Filename,
+				Max:  max,
+				Min:  min,
+				Avg:  math.Floor(avgv / avgc),
+			})
+		}
 
 	}
 	j, err := json.Marshal(results)
