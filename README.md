@@ -5,8 +5,9 @@ Prd computes the highest, lowest, average of the specified file
 ## Usage
 
 ```
-$ prd -file example.jp-cpu-user-d.rrd | jq
+$ prd example.jp-cpu-user-d.rrd | jq
 {
+　"name": "example.jp-cpu-user-d.rrd",
   "max": 2010,
   "min": 1566,
   "avg": 1790
