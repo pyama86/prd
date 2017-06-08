@@ -81,7 +81,7 @@ func (cli *CLI) Run(args []string) int {
 		var avgc float64
 		for i := 0; i < len(r.DsNames); i++ {
 			for n := 0; n < r.RowCnt; n++ {
-				v := math.Floor(r.ValueAt(i, n))
+				v := math.Ceil(r.ValueAt(i, n))
 
 				if v > 0 {
 					avgv += v
